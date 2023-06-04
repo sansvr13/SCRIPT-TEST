@@ -1,0 +1,74 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("One Punch Man : TSH script", "Midnight")
+
+--Main
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("characters")
+
+MainSection:NewButton("Genos", "you are now genos", function()
+    local args = {
+    [1] = "Unlock",
+    [2] = {
+        ["Function"] = "Unlock",
+        ["Character"] = "Genos"
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ReplicationFunction:InvokeServer(unpack(args))
+end)
+
+MainSection:NewButton("Saitama", "Saitama", function()
+    local args = {
+    [1] = "Unlock",
+    [2] = {
+        ["Function"] = "Unlock",
+        ["Character"] = "Saitama"
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ReplicationFunction:InvokeServer(unpack(args))
+end)
+
+MainSection:NewButton("Boros", "makes you boros", function()
+
+local args = {
+    [1] = "Unlock",
+    [2] = {
+        ["Function"] = "Unlock",
+        ["Character"] = "Boros"
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ReplicationFunction:InvokeServer(unpack(args))
+end)
+
+MainSection:NewButton("Garou", "its garou", function()
+
+local args = {
+    [1] = "Unlock",
+    [2] = {
+        ["Function"] = "Unlock",
+        ["Character"] = "Garou"
+    }
+}
+
+game:GetService("ReplicatedStorage").Remotes.ReplicationFunction:InvokeServer(unpack(args))
+end)
+
+--best stuff
+
+local MainSection = Main:NewSection("best stuff")
+
+MainSection:NewButton("infinite yield", "it is infinite yield", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+--credits
+
+local credits = Window:NewTab("credits")
+local creditsSection = credits:NewSection("credits")
+
+creditsSection:NewLabel("all scripts by me - infinite yield")
+creditsSection:NewLabel("THIS IS A BETA THIS MAY BREAK OK?")
+creditsSection:NewLabel("I AM WATCHING THE NBA DONT ASK")
